@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Raghav">
+        <meta name="description" content="A Responsive Page">
+        <meta name="keyword" content="Rag@123">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="20">
+        <title>Local Static</title>
+        <style>
+            *{
+                box-sizing: border-box;
+               /* margin: 0;*/
+            }
+            .menu{
+                float: left;
+                width: 20%;
+            }
+            .menuitem{
+                border-bottom: 2px solid rgba(0, 0, 0, 0.325);
+                /*padding-top: 50px;
+                padding-bottom: 50px;
+                text-align: center;*/
+            }
+           /* .menuitem a{
+                color: black;
+                padding: 60px;
+            }*/
+           /* .menuitem:hover{
+                background-color:rgba(187, 187, 255, 0.2);
+            }*/
+            .main{
+                float: left;
+                background: white;
+                overflow: hidden;
+                width: 80%;
+                border-left: 2px solid rgba(0, 0, 0, 0.325);
+                /*padding-left: 10px;*/
+            }
+            .bottom{
+                float: left;
+                width: 100%;
+            }
+            @media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .bottom {
+    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background-color:#bbfc;padding: 25px;text-align: center;">
+            <h1>Beautiful Landscapes</h1>
+        </div>
+        <div class="menu">
+            <div class="menuitem"><a href="#1" style="text-decoration:none;">Clifton Suspension Bridge</a></div>
+            <div class="menuitem"><a href="#2" style="text-decoration:none;">Cornwall</a></div>
+            <div class="menuitem"><a href="#3" style="text-decoration:none;">Mayfield Lavender</a></div>
+        </div>
+        <div class="main" style="overflow:auto;">
+            <h2 id="1">Clifton Suspension Bridge, England</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem omnis nulla itaque aspernatur quae, consectetur quasi asperiores, similique nobis optio nostrum eaque expedita recusandae soluta velit fugit voluptates iure est.</p>
+            <img src="Clifton.jpg" alt="Clifton Suspension Bridge" style="width:500px;height:400px;">
+            <h2 id="2">Cornwall, England</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem omnis nulla itaque aspernatur quae, consectetur quasi asperiores, similique nobis optio nostrum eaque expedita recusandae soluta velit fugit voluptates iure est.</p>
+            <img src="cornwall.jpg" alt="Cornwall" style="width:500px;height:400px;">
+            <h2 id="3">Mayfield Lavender, England</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem omnis nulla itaque aspernatur quae, consectetur quasi asperiores, similique nobis optio nostrum eaque expedita recusandae soluta velit fugit voluptates iure est.</p>
+            <img src="Mayfield-Lavender.jpg" alt="Mayfield Lavender" style="width:500px;height:400px;">
+        </div>
+        <div class="bottom" style="background-color:#abac;text-align: center;padding: 20px; ">
+            <p>Just a Test Page</p>
+        </div>
+    </body>
+</html>
